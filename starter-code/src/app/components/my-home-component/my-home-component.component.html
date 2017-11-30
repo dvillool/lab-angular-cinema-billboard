@@ -1,0 +1,19 @@
+<header>HEADER</header>
+<div>
+    <ul>
+        <li *ngFor="let movie of moviesList">
+            <div>
+                <h2>{{movie.title}}</h2>
+                <div>
+                    <a [routerLink]="['/movie', movie.id]">
+                        <img class="poster" [src]="movie.poster" alt="poster">
+                    </a>
+                    <p>Sala: {{movie.room}}</p>
+
+                </div>
+            </div>
+        </li>
+
+    </ul>
+</div>
+<footer>FOOTER</footer>
